@@ -1,78 +1,260 @@
 
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
-    background-color:grey;
+    background: repeating-linear-gradient(360deg, #333, #111, #000, #111, #333, #111, #000);
+    color: white; 
+}
+
+.navbar {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 0.02rem 1rem;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.9rem;
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+    width: 20px;
+    height: 20px;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    background-color: transparent;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M3 7h24M3 15h24M3 23h24'/%3E%3C/svg%3E");
+}
+
+
+#topSection {
+    background: transparent;
+    color: white;
+}
+
+#topSection h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+#topSection p {
+    font-size: 1.2rem;
+}
+
+.container {
+    margin-bottom: 80px;
+}
+
+.container:hover {
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+}
+
+.knowimage {
+    height: 100px;
+    width: 100px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.knowimage:hover {
+    transform: scale(1.1);
+}
+
+.img1 {
+    height: 100px;
+    width: 150px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.img1:hover {
+    transform: scale(1.1);
+}
+
+
+.contact-section i {
+    font-size: 24px;
+    color: white; 
+    margin: 0 15px;
+}
+
+section {
+    padding: 5rem 0;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: scale(1.03);
+    background-color: rgba(128, 128, 128, 0.1); 
+}
+
+.lowerseg {
+    background-color: #8311a6;
+    width: 250px;
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.ist {
+    color: white;
+}
+
+.img1 {
+    height: 100px;
+    width: 150px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.img1:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+}
+
+.modal-body img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.modal-dialog-centered {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
-  
-  .stopwatch {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 8px 10px rgb(240, 177, 2);
-    text-align: center;
-    width: 300px;
-  }
-  
-  .time-display {
-    font-size: 2em;
-    margin: 20px 0;
-    font-weight: bold;
-  }
-  
-  .buttons button {
-    margin: 5px;
-    padding: 10px 15px;
-    font-size: 1em;
+}
+
+.modal-content {
+    background-color: #111;
+    border: none;
+    color: white;
+}
+
+.modal-header .close {
+    color: white;
+    opacity: 1;
+    font-size: 1.5rem;
+}
+
+.modal-header .close:hover {
+    color: #f8d7da;
+}
+
+
+.modal-footer button {
+    background-color: #007bff;
+    color: white;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .buttons button:hover {
-    background-color: #ddd;
-  }
-  
-  #laps {
-    margin-top: 15px;
-    text-align: left;
-    max-height: 200px;
-    overflow-y: auto;
-  }
-  
-  #laps div {
-    background-color: #f9f9f9;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.modal-footer button:hover {
+    background-color: #0056b3;
+}
+
+/* Icon Hover Effect */
+.ist svg {
+    width: 40px;
+    height: 40px;
+    color: white;
+    margin: 0 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.ist svg:hover {
+    transform: scale(1.2);
+}
+
+
+.footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.footer .copyright {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.footer .footer-links {
     margin: 5px 0;
-    padding: 5px 10px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    font-size: 0.9em;
+    font-size: 14px;
+}
+
+.footer .footer-links a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer .footer-links a:hover {
+    color: #0056b3;
+}
+
+
+body {
+    color: white;
+    background-color: black; 
   }
-.intbtn{
-    background-color:lightgreen;
-    border-radius:10px;
-    border-style:solid;
-    padding:5px
-}  
-.lapbtn{
-    background-color: orange;
-    border-radius:10px;
-    border-style:solid;
-    padding:5px
+  
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: white;
+  }
+  
+  p, span, li, a {
+    color: white;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  a:hover {
+    color: lightgray; 
+  }
+.cnwith{
+    background-color: #8311a6;
+    width:200px;
+    font-size: 20px;
+    text-align: center;
+    padding:5px;
+    border-radius: 20px;
 }
-.stopwatch:hover{
-  transform: scale(1.04);
-    transition: all 0.3s ease-in-out;
-}
-.lapbtn:hover{
-  transform: scale(1.04);
-    transition: all 0.3s ease-in-out;
-}
-.intbtn:hover{
-  transform: scale(1.04);
-    transition: all 0.3s ease-in-out;
+.icons{
+    color:white;
+    
 }
