@@ -1,4 +1,4 @@
-
+// script.js
 let startTime = 0, elapsedTime = 0, timerInterval;
 const timeDisplay = document.getElementById("time-display");
 const lapsContainer = document.getElementById("laps");
